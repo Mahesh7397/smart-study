@@ -1,4 +1,4 @@
-import { BookOpen, Brain, MessageCircle, Calculato, FileText, Book, BookMarked, GraduationCap } from 'lucide-react';
+import { BookOpen, Brain, MessageCircle, Calculator, FileText, Book, BookMarked, GraduationCap } from 'lucide-react';
 
 
 
@@ -25,7 +25,7 @@ const features = [
     }
     ,
     {
-      icon: <Calculato className="w-6 h-6" />,
+      icon: <Calculator className="w-6 h-6" />,
       title: "Grade Calculator",
       description: "Instantly compute your grades, GPA, and academic performance with ease!",
       link:"/gradcalculator"
