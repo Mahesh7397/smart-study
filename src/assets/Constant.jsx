@@ -21,7 +21,7 @@ const features = [
       icon: <MessageCircle className="w-6 h-6" />,
       title: "Doubt Solving Chatbox",
       description: "Get instant answers to your academic questions 24/7",
-      link:"#"
+      link:"/community"
     }
     ,
     {
@@ -49,7 +49,7 @@ const features = [
   
   const resourceTypes = [
     {
-      id: 'question_paper',
+      id: 'questionpaper',
       icon: <FileText className="w-6 h-6" />,
       title: 'Past Question Papers',
       description: 'Access previous year question papers and practice tests',

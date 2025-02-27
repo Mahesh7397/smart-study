@@ -1,9 +1,10 @@
 
 import { Search } from 'lucide-react'
-
+import { useNavigate } from 'react-router-dom'
 const SearchBar = () => {
+    const navigate=useNavigate()
   return (
-    <div className="max-w-3xl mx-auto px-4 -mt-8 relative z-10">
+    <div className="max-w-3xl mx-auto px-4 -mt-8 relative z-10" onClick={()=>navigate("/search")}>
                 <div className="bg-white rounded-xl shadow-lg p-4 flex items-center gap-3">
                     <Search className="w-5 h-5 text-gray-400" />
                     <input
@@ -15,7 +16,7 @@ const SearchBar = () => {
                         Search
                     </button>
                 </div>
-            </div>
+    </div>
   )
 }
 

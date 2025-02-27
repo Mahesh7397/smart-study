@@ -53,8 +53,8 @@ const GradCalculator = () => {
 
 
   return (
-    <div className="flex flex-col item-center md:flex-row min-h-screen p-4 md:p-6 bg-purple-100 ">
-      <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-screen md:w-full min-w-3xs mb-6 m-6">
+    <div className="flex flex-col item-center md:flex-row min-h-screen p-4 md:p-6 bg-purple-100/30 ">
+      <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition max-w-screen md:w-full min-w-3xs mb-6 m-6">
         <h2 className="text-xl font-bold mb-4">Grade Calculator</h2>
         <label className="block mb-2">Number of Subjects:</label>
         <input
@@ -84,14 +84,14 @@ const GradCalculator = () => {
         ))}
         <button
           onClick={calculateGrade}
-          className="bg-blue-500 text-white p-2 rounded w-full mt-4"
+          className="bg-purple-500 hover:bg-purple-700 transition text-white p-2 rounded w-full mt-4"
         >
           Calculate Grade
         </button>
-        {percentage && <p className="mt-4">Percentage: {percentage}%</p>}
-        {grade && <p>Grade: {grade}</p>}
+        {percentage && <p className="mt-4 text-xl font-(family-name:Fjalla One,serif}) ">Percentage: {percentage}%</p>}
+        {grade && <p className="text-xl">Grade: {grade}</p>}
       </div>
-      <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition max-w-screen md:w-full min-w-3xs md-6 m-4">
+      <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition max-w-screen md:w-full min-w-3xs md-6 m-4">
         <h2 className="text-xl font-bold mb-4">Grade Prediction</h2>
         <label className="block mb-2">Internal Mark (out of 25):</label>
         <input
@@ -122,7 +122,7 @@ const GradCalculator = () => {
         </select>
         <button
           onClick={calculateRequiredMarks}
-          className="bg-green-500 text-white p-2 rounded w-full"
+          className="bg-purple-500 hover:bg-purple-700 transition text-white p-2 rounded w-full"
         >
           Predict Required Marks
         </button>

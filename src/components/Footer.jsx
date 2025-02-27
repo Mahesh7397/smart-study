@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react"
+
 
 const Footer = () => {
   return (
@@ -21,23 +21,16 @@ const Footer = () => {
                 <h4 className="font-semibold mb-4">Resources</h4>
                 <ul className="space-y-2">
                     <li><a href="#resource" className="text-gray-400 hover:text-white transition">Study Materials</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-white transition">AI Tutor</a></li>
-                    <li><a href="#" className="text-gray-400 hover:text-white transition">Community</a></li>
+                    <li><a href="/ai-tutor" className="text-gray-400 hover:text-white transition">AI Tutor</a></li>
+                    <li><a href="/community" className="text-gray-400 hover:text-white transition">Community</a></li>
                 </ul>
             </div>
             <div>
-                <h4 className="font-semibold mb-4">Newsletter</h4>
-                <p className="text-gray-400 mb-4">Stay updated with our latest features and news.</p>
-                <div className="flex gap-2">
-                    <input
-                        type="email"
-                        placeholder="Enter your email"
-                        className="bg-gray-800 px-4 py-2 rounded-lg flex-1 outline-none focus:ring-2 focus:ring-purple-600"
-                    />
-                    <button className="bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-700 transition">
-                        <ChevronRight className="w-5 h-5" />
-                    </button>
-                </div>
+                <h4 className="font-semibold mb-4">Contact</h4>
+                <p className="text-gray-400 mb-4">+91 7397423635</p>
+                <p className="text-gray-400 mb-4">maheshwaranm116@gmail.com</p>
+                <p className="text-gray-400 mb-4">+91 6381181744</p>
+                <p className="text-gray-400 mb-4">mohamedfazilrm@gmail.com</p>
             </div>
         </div>
     </div>
